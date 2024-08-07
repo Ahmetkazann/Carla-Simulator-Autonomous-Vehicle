@@ -11,14 +11,14 @@ When the car reaches each point, the point is deleted from the stack data struct
 In this way, it reaches point a from point b by following the route.
 
 
-##The Observation space:
+## The Observation space:
 - Angle for route
 - What RL SEES Screen
 On this screen, the images detected for the car to comply with the traffic rules are transferred to the black screen. In this way, the RL model sees only the necessary objects, and the training is accelerated because the states are just that.
 We trained yolo model for this objective. Model only detect car and traffic light.
 
 
-#### Rewards system:
+## Rewards system:
 - The greater the angle between the direction the car is going and the direction it should go, the more penalty it will receive.
 - Any collision is penalized by -3000 and resets the training.
 
