@@ -23,8 +23,10 @@ We trained yolo model for this objective. Model only detect car and traffic ligh
 
 Used Simulations and Libraries
 - Carla Simulator
-- Stable_Baselines3
 - Numpy
 - Stable_Baselines3 PPO (Reinforcement Learning)
 - OpenAI GYM Library
 - Ultralytics YOLO
+
+## Project video
+https://www.youtube.com/watch?v=ZzFieG2iCJw&t=16s
