@@ -12,16 +12,15 @@ In this way, it reaches point a from point b by following the route.
 
 
 ##The Observation space:
-1-) Angle for route
-2-) What RL SEES Screen
+- Angle for route
+- What RL SEES Screen
 On this screen, the images detected for the car to comply with the traffic rules are transferred to the black screen. In this way, the RL model sees only the necessary objects, and the training is accelerated because the states are just that.
 We trained yolo model for this objective. Model only detect car and traffic light.
 
 
-![3](https://github.com/user-attachments/assets/160d0477-a8bc-44cb-b6dd-1c6fa08d5bbe)
 #### Rewards system:
-1-) The greater the angle between the direction the car is going and the direction it should go, the more penalty it will receive.
-2-) Any collision is penalized by -3000 and resets the training.
+- The greater the angle between the direction the car is going and the direction it should go, the more penalty it will receive.
+- Any collision is penalized by -3000 and resets the training.
 
 
 Used Simulations and Libraries
